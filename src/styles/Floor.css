@@ -11,7 +11,7 @@
 .div__floor_background{
     height: var(--floor-background-height);
     width: auto;
-    background-image: url('./public/img/first-floor.png');
+    background-image: url('../img/first-floor.png');
     margin-top: -460px;
 }
 .div__floor{

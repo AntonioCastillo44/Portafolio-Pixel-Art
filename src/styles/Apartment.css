@@ -48,7 +48,7 @@
 }
 
 .div__acerca{
-    background-image: url('./public/img/1000x562.gif');
+    background-image: url('../img/1000x562.gif');
 }
 .div__acerca-img{
     height: 80%; 
@@ -65,7 +65,7 @@
 }
 
 .div__experiencia{
-    background-image: url('./public/img/1014x498.gif');
+    background-image: url('../img/1014x498.gif');
 }
 .div__experiencia-img{
     height: 95%; 
@@ -81,7 +81,7 @@
 }
 
 .div__portafolio{
-    background-image: url('./public/img/960x540.gif');
+    background-image: url('../img/960x540.gif');
 }
 .div__portafolio-img{
     height: 65%; 
@@ -97,7 +97,7 @@
 }
 
 .div__contacto{
-    background-image: url('./public/img/1242x672.gif');
+    background-image: url('../img/1242x672.gif');
 }
 .div__contacto-img{
     height: 80%; 
