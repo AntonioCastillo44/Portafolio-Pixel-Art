@@ -1,6 +1,9 @@
 import React from 'react'
-import Me from '/Users/Concord/Desktop/Portafolio/portafolio-pixel-art/public/img/me.png'
-import Mex from '/public/img/me.png'
+import me from '../img/me.png'
+import acerca from '../img/acerca.png'
+import experiencia from '../img/experiencia.png'
+import portafolio from '../img/portafolio.png'
+import contacto from '../img/contacto.png'
 import '../styles/Apartment.css'
 
 const Apartment = ({toggleModalAcercaDe, toggleModalExperiencia, toggleModalPortafolio, toggleModalContacto}) => {
@@ -15,26 +18,25 @@ const Apartment = ({toggleModalAcercaDe, toggleModalExperiencia, toggleModalPort
                 </div>
 
                 <div className='div__apartment div__acerca'>
-                    <img className='div__acerca-font wobble-horizontal ' src="./public/img/acerca.png" alt="" onClick={toggleModalAcercaDe}/>
-                    <img className='div__acerca-img' src={Mex} alt=""/>
+                    <img className='div__acerca-font wobble-horizontal ' src={acerca} alt="" onClick={toggleModalAcercaDe}/>
+                    <img className='div__acerca-img' src={me} alt=""/>
                 </div>
 
                 <div className='div__apartment div__experiencia'>
-                    <img className='div__experiencia-font wobble-horizontal' src="./public/img/experiencia.png" alt=""  onClick={toggleModalExperiencia}/>
-                    <img className='div__experiencia-img' src={Me} alt="" />
+                    <img className='div__experiencia-font wobble-horizontal' src={experiencia} alt=""  onClick={toggleModalExperiencia}/>
+                    <img className='div__experiencia-img' src={me} alt="" />
                 </div>
 
                 <div className='div__apartment div__portafolio'>
-                    <img className='div__portafolio-img' src={Me} alt="" />
-                    <img className='div__portafolio-font wobble-horizontal' src="./public/img/portafolio.png" alt="" onClick={toggleModalPortafolio}/>
+                    <img className='div__portafolio-img' src={me} alt="" />
+                    <img className='div__portafolio-font wobble-horizontal' src={portafolio} alt="" onClick={toggleModalPortafolio}/>
                 </div>
 
                 <div className='div__apartment div__contacto'>
-                    <img className='div__contacto-font wobble-horizontal' src="./public/img/contacto.png" alt=""  onClick={toggleModalContacto}/>
-                    <img className='div__contacto-img' src={Me} alt="" />
+                    <img className='div__contacto-font wobble-horizontal' src={contacto} alt=""  onClick={toggleModalContacto}/>
+                    <img className='div__contacto-img' src={me} alt="" />
                 </div>
         </section>
-
 
     </body>
     

@@ -1,4 +1,7 @@
 import React from 'react'
+import utel from '../img/utel.png'
+import concord from '../img/concord.png'
+import academlo from '../img/academlo.png'
 import '../styles/Experiencia.css'
 import '../styles/SecycledStyles.css'
 
@@ -19,7 +22,7 @@ const Experiencia = ({toggleModalExperiencia}) => {
             <p className="experiencia__contet">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos quae repellat, fugit consequatur exercitationem beatae doloribus adipisci veniam. Maiores odit beatae et commodi atque delectus quos autem vero repellendus!
              </p>
-             <img src="./public/img/utel.png" alt="" className="experiencia__logo" />
+             <img src={utel} alt="" className="experiencia__logo" />
         </div>
 
         <div className="experiencia__info">
@@ -27,7 +30,7 @@ const Experiencia = ({toggleModalExperiencia}) => {
             <p className="experiencia__contet">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos quae repellat, fugit consequatur exercitationem beatae doloribus adipisci veniam. Maiores odit beatae et commodi atque delectus quos autem vero repellendus!
              </p>
-             <img src="./public/img/concord.png" alt="" className="experiencia__logo" />
+             <img src={concord} alt="" className="experiencia__logo" />
         </div>
 
         <div className="experiencia__info">
@@ -35,7 +38,7 @@ const Experiencia = ({toggleModalExperiencia}) => {
             <p className="experiencia__contet">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos quae repellat, fugit consequatur exercitationem beatae doloribus adipisci veniam. Maiores odit beatae et commodi atque delectus quos autem vero repellendus!
              </p>
-             <img src="./public/img/academlo.png" alt="" className="experiencia__logo" />
+             <img src={academlo} alt="" className="experiencia__logo" />
         </div>
         </div>
 

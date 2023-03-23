@@ -1,4 +1,7 @@
 import React from 'react'
+import whatsApp from '../img/WhatsApp.png'
+import linkedIn from '../img/LinkedIn.png'
+import gmail from '../img/Gmail.png'
 import '../styles/Contacto.css'
 import '../styles/SecycledStyles.css'
 
@@ -14,17 +17,17 @@ const Contacto = ({toggleModalContacto}) => {
 
    <div className="contacto__content">
    <div className="contacto_logo">
-      <img className="contacto__img logo_center" src="./public/img/WhatsApp.png" alt="" />
+      <img className="contacto__img logo_center" src={whatsApp} alt="" />
       <h1 className="contacto__title"> WhatsApp </h1>
     </div>
 
     <div className="contacto_logo">
-      <img className="contacto__img logo_center" src="./public/img/LinkedIn.png" alt="" />
+      <img className="contacto__img logo_center" src={linkedIn} alt="" />
       <h1 className="contacto__title"> LinkedIn </h1>
     </div>
 
     <div className="contacto_logo">
-      <img className="contacto__img logo_center" src="./public/img/Gmail.png" alt="" />
+      <img className="contacto__img logo_center" src={gmail} alt="" />
       <h1 className="contacto__title"> Gmail </h1>
     </div>
 
