@@ -15,7 +15,7 @@
   }
 
 .body__apartment {
-    background-image: url('./public/img/clouds.gif'); 
+    background-image: url('../img/clouds.gif'); 
     display: flex;
     justify-content: center;
     align-items: center;
