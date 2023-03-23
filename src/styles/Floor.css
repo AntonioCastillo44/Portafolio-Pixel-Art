@@ -1,0 +1,38 @@
+:root {
+    --floor-background-height: 460px;
+    --floor-height: 100px;
+    --floor-margin-top: -38px;
+
+    --footer-height: 50px;
+    --footer-padding-top: 15px;
+  }
+
+
+.div__floor_background{
+    height: var(--floor-background-height);
+    width: auto;
+    background-image: url('./public/img/first-floor.png');
+    margin-top: -460px;
+}
+.div__floor{
+    height: var(--floor-height);
+    width: auto;
+    background: rgb(61,89,103);
+    background: linear-gradient(90deg, rgba(61,89,103,1) 0%, rgba(93,128,150,1) 100%);
+    margin-top: var(--floor-margin-top);
+}
+.div__floor_footer{
+    height: var(--footer-height);
+    width: auto;
+    background-color: #05ba8a;
+    text-align: center;
+    color: #ffffff;
+    padding-top: var(--footer-padding-top);
+}
+
+@media  (max-width: 900px) {
+    :root {
+        --footer-height: 25px;
+        --footer-padding-top: 5px;
+      }
+}

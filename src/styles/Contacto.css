@@ -1,0 +1,24 @@
+.container_contacto-contet{
+    background-color: rgb(140, 160, 95);
+    margin: 10%;
+}
+
+.container_contacto-title{
+    margin-bottom: 5%;
+}
+
+.contacto__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.contacto__img{
+    width: auto;
+    height: 100px;
+}
+
+.contacto__title{
+    text-align: center;
+}

@@ -1,0 +1,76 @@
+
+.container__experiencia-contet{
+    background-color: rgb(255, 238, 80);
+    margin: 10%;
+}
+
+.container__experiencia-info{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 3%;
+}
+
+.experiencia__title{
+    margin-bottom: 10%;
+    height: 75px;
+}
+
+.experiencia__contet{
+    margin-bottom: 8%;
+}
+
+.experiencia__logo{
+    height: 100px;
+    width: auto;
+    margin: auto;
+    display: block;
+  }
+
+  @media (max-width: 1310px) {
+    .experiencia__title{
+        height: 110px;
+    }
+}
+
+@media (max-width: 1150px)  {
+        .container__experiencia{
+            height: auto;
+        }
+          
+        .container__experiencia-info{
+            flex-direction: column;
+             gap: 80px;
+        }
+    
+        .experiencia__title{
+            margin-bottom: 0%;
+            height: 75px;
+            text-align: center;
+        }
+    
+        .experiencia__contet{
+            margin-bottom: 2%;
+        }
+    }
+    
+
+@media (max-width: 570px) {
+ 
+      
+    .experiencia__logo{
+        height: 80px;
+      }
+
+    .experiencia__title{
+        height: 100px;
+    }
+}
+
+@media (max-width: 380px) {
+    .experiencia__title{
+        height: 140px;
+    }
+
+}

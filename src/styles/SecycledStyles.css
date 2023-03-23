@@ -1,0 +1,53 @@
+
+.flex__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.main_container{
+    margin: 5%;
+    padding: 2%;
+    max-width: 1400px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.219);
+}
+
+.logo_center{
+    height: 100px;
+    width: auto;
+    margin: auto;
+    display: block;
+}
+
+.container_close-icon{
+    display: flex;
+    justify-content: flex-end;
+}
+.close_icon{
+    cursor: pointer;
+    transition: transform .2s; 
+    color: white;
+}
+.close_icon:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    color:black;
+}
+
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:  #014e7570;
+    backdrop-filter: blur(2px);
+}
+
+.window{
+    position: relative;
+    height: 100vh;
+}
+

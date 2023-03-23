@@ -1,0 +1,18 @@
+.container__portafolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 10%;
+}
+
+.container_portafolio-contet{
+background-color: aqua;
+
+}
+
+.portafolio__contet{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}

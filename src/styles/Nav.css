@@ -1,0 +1,88 @@
+@import 'https://fonts.googleapis.com/css?family=Rubik+One';
+
+:root {
+    --nav-margin: 50px;
+    --nav-height: 110px;
+    --nav-padding: 10px;
+    --nav-gap: 4%;
+
+    --button-font: 15px;
+    --button-padding: 10px 20px;
+    --button-shadow: 10px;
+    --button-shadow-black: 11px;
+  }
+
+
+.div__nav {
+    background-color: #e07937;
+    margin-bottom: var(--nav-margin);
+    height: var(--nav-height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--nav-gap);
+    padding-bottom: var(--nav-padding);
+}
+
+.nav__button {
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+  text-shadow: 0 1px 0 hsla(0, 0%, 0%, 0.2);
+  border-color: #ffffff00;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: 'Rubik One', sans-serif;
+  border-radius: 5px;
+  padding: var(--button-padding);
+  margin: 0 3px;
+  position: relative;
+  display: inline-block;
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  -o-transition: all 0.1s;
+  transition: all 0.1s;
+  background: #201D2C;
+  box-shadow: 0 var(--button-shadow) 0 #363556, 0 var(--button-shadow-black) 5px hsla(0, 0%, 0%, 0.5);
+  cursor: pointer;
+  font-size: var(--button-font);
+}
+.nav__button:active {
+  -webkit-transform: translateY(7px);
+  -moz-transform: translateY(7px);
+  -o-transform: translateY(7px);
+  transform: translateY(7px);
+  box-shadow: 0 3px 0 #363556, 0 4px 6px hsla(0, 0%, 0%, 0.7);
+}
+
+@media  (max-width: 1100px) {
+  :root {
+       --button-font: 12px;
+    }
+}
+
+@media  (max-width: 900px) {
+    :root {
+        --nav-margin: 35px;
+        --button-font: 10px;
+        --nav-gap: 3%;
+        --nav-height: 70px;
+        --nav-padding: 9px;
+
+        --button-shadow: 8px;
+        --button-shadow-black: 9px;
+        --button-padding: 5px 10px;
+      }
+}
+
+@media  (max-width: 600px) {
+    :root {
+        --nav-margin: 25px;
+        --button-font: 5px;
+        --nav-gap: 1%;
+        --nav-height: 50px;
+        --nav-padding: 9px;
+
+        --button-shadow: 6px;
+        --button-shadow-black: 7px;
+        --button-padding: 5px 10px;
+      }
+}
