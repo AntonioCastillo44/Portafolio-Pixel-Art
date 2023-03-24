@@ -55,9 +55,7 @@ function App() {
 
       <ModalContacto activeContacto={activeContacto} toggleModalContacto={toggleModalContacto}>
         <Contacto toggleModalContacto={toggleModalContacto}/>
-      </ModalContacto> 
-      
-      {/* <Portafolio/> */}
+      </ModalContacto>  
     </div>
   )
 }

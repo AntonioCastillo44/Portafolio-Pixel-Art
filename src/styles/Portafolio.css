@@ -7,12 +7,86 @@
 }
 
 .container_portafolio-contet{
-background-color: aqua;
+    background-color: #014e75;
+}
 
+.portafolio__container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .portafolio__contet{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+    gap: 50px;
+    padding-top: 20px;
+    padding-left: 20px;
 }
+.portafolio__info{
+    width: 500px;
+}
+.portafolio__title{
+    text-align: center;
+}
+.portafolio__subtitle{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.portafolio__button{
+    text-align: center;
+}
+.portafolio__button{
+    margin-top: 50px;
+    margin-left: 250px;
+}
+
+.portafolio__cellPhone{
+    height: 450px;
+    padding-right: 20px;
+}
+
+
+
+.slider-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider {
+    width: auto; /* ajusta el ancho según tus necesidades */
+    height: auto; /* ajusta la altura según tus necesidades */
+    overflow: hidden; /* oculta los divs que se salgan del contenedor */
+    position: relative;
+  }
+  
+  .slide {
+    width: auto; /* ajusta el ancho según tus necesidades */
+    height: auto; /* ajusta la altura según tus necesidades */
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* oculta los divs al principio */
+    transition: opacity 1s ease-in-out; /* agrega una transición suave */
+  }
+  
+  .slide.active {
+    opacity: 1; /* muestra el div activo */
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    margin: 0 10px;
+    background: none;
+    border: 0;
+    font-size: 50px;
+    padding-top: 20px;
+  }
+  
+ 
