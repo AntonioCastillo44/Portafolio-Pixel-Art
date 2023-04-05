@@ -1,19 +1,16 @@
 import React from 'react'
-import Portal from './Portal'
+
 import '../styles/SecycledStyles.css'
 
 
-const ModalPortafolio = ({children, activePortafolio, toggleModalPortafolio}) => {
+const ModalPortafolio = ({handleClosePortafolio, isOpenPortafolio, children}) => {
     return (
-     <Portal> { activePortafolio && ( 
-        <div className='wrapper'> 
-            <div className='window' onClick={toggleModalPortafolio}>
-                {children}
-            </div>
-            <div className='window__close' onClick={toggleModalPortafolio}>  </div>
-        </div>
-      )}
-    </Portal> 
+      <div className={`modal ${isOpenPortafolio ? 'is-open' : ''}`}>
+        <div className="modal-overlay" onClick={handleClosePortafolio} />
+         <div className="modal-content">
+          <div className="modal-body">{children}</div>
+         </div>
+      </div>
     )
   }
 

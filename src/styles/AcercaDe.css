@@ -1,10 +1,11 @@
+
 .container__acerca-contet{
     background-color: #014e75;
-    margin: 10%;
+    margin: 0;
 }
 
 .acerca__content{
-    margin-bottom: 2%;
     padding: 3%;
 }
+
 

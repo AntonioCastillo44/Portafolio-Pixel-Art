@@ -14,48 +14,61 @@ import ModalPortafolio from './Modal/ModalPortafolio'
 import ModalContacto from './Modal/ModalContacto'
 
 function App() {
-  const[activeAcercaDe, setActiveAcercaDe] = useState(false)
-  const toggleModalAcercaDe = () => {
-    setActiveAcercaDe(!activeAcercaDe)
-  }
 
-  const[activeExperiencia, setActiveModalExperiencia] = useState(false)
-  const toggleModalExperiencia = () => {
-    setActiveModalExperiencia(!activeExperiencia)
-  }
+  const [isOpenContacto, setIsOpenContacto] = useState(false);
+  const handleOpenContacto = () => {
+    setIsOpenContacto(true);
+  };
+  const handleCloseContacto = () => {
+    setIsOpenContacto(false);
+  };
 
-  const[activePortafolio, setActiveModalPortafolio] = useState(false)
-  const toggleModalPortafolio = () => {
-    setActiveModalPortafolio(!activePortafolio)
-  }
+  const [isOpenPortafolio, setIsOpenPortafolio] = useState(false);
+  const handleOpenPortafolio = () => {
+    setIsOpenPortafolio(true);
+  };
+  const handleClosePortafolio = () => {
+    setIsOpenPortafolio(false);
+  };
 
-  const[activeContacto, setActiveModalContacto] = useState(false)
-  const toggleModalContacto = () => {
-    setActiveModalContacto(!activeContacto)
-  }
-  toggleModalContacto
+  const [isOpenExperiencia, setIsOpenExperiencia] = useState(false);
+  const handleOpenExperiencia = () => {
+    setIsOpenExperiencia(true);
+  };
+  const handleCloseExperiencia = () => {
+    setIsOpenExperiencia(false);
+  };
+
+  const [isOpenAcercaDe, setIsOpenAcercaDe] = useState(false);
+  const handleOpenAcercaDe = () => {
+    setIsOpenAcercaDe(true);
+  };
+  const handleCloseAcercaDe = () => {
+    setIsOpenAcercaDe(false);
+  };
+
   return (
     <div>
       <Header />
       <Nav />
-      <Apartment  toggleModalAcercaDe={ toggleModalAcercaDe} toggleModalExperiencia={toggleModalExperiencia} toggleModalPortafolio={toggleModalPortafolio} toggleModalContacto={toggleModalContacto}/>
+      <Apartment  handleOpenContacto={handleOpenContacto} handleOpenPortafolio={handleOpenPortafolio} handleOpenExperiencia={handleOpenExperiencia} handleOpenAcercaDe={handleOpenAcercaDe}/>
       <Floor />
 
-      <ModalAcercaDe activeAcercaDe={activeAcercaDe}  toggleModalAcercaDe={ toggleModalAcercaDe}>
-        <AcercaDe  toggleModalAcercaDe={toggleModalAcercaDe}/> 
+      <ModalAcercaDe isOpenAcercaDe={isOpenAcercaDe}  handleCloseAcercaDe={handleCloseAcercaDe}>
+        <AcercaDe  handleCloseAcercaDe={handleCloseAcercaDe}/> 
       </ModalAcercaDe>  
 
-      <ModalExperiencia activeExperiencia={activeExperiencia}  toggleModalExperiencia={ toggleModalExperiencia}>
-        <Experiencia toggleModalExperiencia={toggleModalExperiencia}/> 
+      <ModalExperiencia isOpenExperiencia={isOpenExperiencia} handleCloseExperiencia={handleCloseExperiencia}>
+        <Experiencia handleCloseExperiencia={handleCloseExperiencia}/> 
       </ModalExperiencia>  
-      
-      <ModalPortafolio activePortafolio={activePortafolio} toggleModalPortafolio={toggleModalPortafolio}>
-        <Portafolio toggleModalPortafolio={toggleModalPortafolio}/>
+ 
+      <ModalPortafolio isOpenPortafolio={isOpenPortafolio} handleClosePortafolio={handleClosePortafolio}>
+        <Portafolio handleClosePortafolio={handleClosePortafolio}/>
       </ModalPortafolio> 
 
-      <ModalContacto activeContacto={activeContacto} toggleModalContacto={toggleModalContacto}>
-        <Contacto toggleModalContacto={toggleModalContacto}/>
-      </ModalContacto>  
+      <ModalContacto isOpenContacto={isOpenContacto} handleCloseContacto={handleCloseContacto}>
+        <Contacto handleCloseContacto={handleCloseContacto} />
+      </ModalContacto>
     </div>
   )
 }

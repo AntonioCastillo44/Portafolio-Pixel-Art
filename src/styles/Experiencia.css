@@ -1,7 +1,7 @@
 
 .container__experiencia-contet{
-    background-color: rgb(255, 238, 80);
-    margin: 10%;
+    background-color: #014e75;
+    margin: 0;
 }
 
 .container__experiencia-info{
@@ -9,12 +9,15 @@
     justify-content: center;
     align-items: flex-start;
     gap: 40px;
-    padding: 3%;
+    
+}
+.container_portafolio-title{
+    font-size: 32px;
+    margin-bottom: 5px;
 }
 
 .experiencia__title{
-    margin-bottom: 10%;
-    height: 75px;
+    margin-bottom: 15px;
 }
 
 .experiencia__contet{
@@ -26,6 +29,14 @@
     width: auto;
     margin: auto;
     display: block;
+    backdrop-filter: blur(2px);
+  }
+
+  .experiencia__button{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 
   @media (max-width: 1310px) {

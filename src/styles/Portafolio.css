@@ -2,15 +2,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    margin: 10%;
+    height: auto;
 }
 
 .container_portafolio-contet{
     background-color: #014e75;
+    margin: 0;
 }
 
 .portafolio__container{
+
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -36,11 +37,24 @@
     margin-bottom: 50px;
     text-align: center;
 }
-.portafolio__button{
+.portafolio-subtitle-crud{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.portafolio-subtitle-wiki{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.portafolio-subtitle-clima{
+    margin-bottom: 20px;
     text-align: center;
 }
 .portafolio__button{
     margin-top: 50px;
+    margin-left: 250px;
+}
+.portafolio-button-crud{
+    margin-top: 30px;
     margin-left: 250px;
 }
 
@@ -50,43 +64,4 @@
 }
 
 
-
-.slider-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.slider {
-    width: auto; /* ajusta el ancho según tus necesidades */
-    height: auto; /* ajusta la altura según tus necesidades */
-    overflow: hidden; /* oculta los divs que se salgan del contenedor */
-    position: relative;
-  }
-  
-  .slide {
-    width: auto; /* ajusta el ancho según tus necesidades */
-    height: auto; /* ajusta la altura según tus necesidades */
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0; /* oculta los divs al principio */
-    transition: opacity 1s ease-in-out; /* agrega una transición suave */
-  }
-  
-  .slide.active {
-    opacity: 1; /* muestra el div activo */
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50px;
-    margin: 0 10px;
-    background: none;
-    border: 0;
-    font-size: 50px;
-    padding-top: 20px;
-  }
-  
  

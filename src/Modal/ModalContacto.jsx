@@ -1,20 +1,15 @@
 import React from 'react'
-import Portal from './Portal'
 import '../styles/SecycledStyles.css'
 
-
-const ModalContacto = ({children, activeContacto, toggleModalContacto}) => {
-    return (
-     <Portal> { activeContacto && ( 
-        <div className='wrapper'> 
-            <div className='window' onClick={toggleModalContacto}>
-                {children}
-            </div>
-            <div className='window__close' onClick={toggleModalContacto}>  </div>
-        </div>
-      )}
-    </Portal> 
-    )
+const ModalContacto = ({handleCloseContacto, isOpenContacto, children }) => {
+  return (
+    <div className={`modal ${isOpenContacto ? 'is-open' : ''}`}>
+      <div className="modal-overlay" onClick={handleCloseContacto} />
+      <div className="modal-content">
+        <div className="modal-body">{children}</div>
+      </div>
+    </div>
+  )
   }
 
 export default ModalContacto

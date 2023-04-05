@@ -1,19 +1,15 @@
 import React from 'react'
-import Portal from './Portal'
 import '../styles/SecycledStyles.css'
 
 
-const ModalAcercaDe = ({children, activeAcercaDe, toggleModalAcercaDe}) => {
-    return (
-     <Portal> { activeAcercaDe && ( 
-        <div className='wrapper'> 
-            <div className='window' onClick={toggleModalAcercaDe}>
-                {children}
-            </div>
-            <div className='window__close' onClick={toggleModalAcercaDe}>  </div>
+const ModalAcercaDe = ({handleCloseAcercaDe, isOpenAcercaDe, children}) => {
+  return (
+    <div className={`modal ${isOpenAcercaDe ? 'is-open' : ''}`}>
+       <div className="modal-overlay" onClick={handleCloseAcercaDe} />
+        <div className="modal-content">
+         <div className="modal-body">{children}</div>
         </div>
-      )}
-    </Portal> 
+    </div>
     )
   }
 
