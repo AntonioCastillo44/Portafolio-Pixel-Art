@@ -35,18 +35,20 @@ const Portafolio = ({ handleClosePortafolio }) => {
           <div className={activeIndex === 0 ? "slide active" : "slide"}>
             <div className="portafolio__contet" alt="Imagen 1">
               <div className="portafolio__info">
-                <h1 className="portafolio__title"> Pokédex</h1>
+                <h1 className="portafolio__title">Pokédex</h1>
                 <h2 className="portafolio__subtitle">
                   React router y Redux
                 </h2>
                 <p className="portafolio__content">
                   Una de mis creaciones más recientes fue una pokedek en la que traté de mantenerme fiel al diseño clásico de las cartas Pokémon. Para garantizar la seguridad de la aplicación, implementé una ruta protegida utilizando React Router. Además, para mejorar la gestión del estado de la aplicación, decidí practicar la implementación de Redux.
                 </p>
-              
-                <button className="portafolio__button nav__button">
+
+                <a href="https://pokedex-jach.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <button className="portafolio__button nav__button">
                     Página
-                </button>
-    
+                  </button>
+                </a>
+
               </div>
 
               <div className="portafolio__cellPhone">
@@ -58,17 +60,19 @@ const Portafolio = ({ handleClosePortafolio }) => {
           <div className={activeIndex === 1 ? "slide active" : "slide"}>
             <div className="portafolio__contet" alt="Imagen 2">
               <div className="portafolio__info">
-                <h1 className="portafolio__title"> Administrador de usuarios</h1>
+                <h1 className="portafolio__title">Administrador de usuarios</h1>
                 <h2 className="portafolio-subtitle-crud">
                   {"CRUD’s y métodos HTTP"}
                 </h2>
                 <p className="portafolio__content">
-                Desarrollé una aplicación completa utilizando CRUD (Create, Read, Update, Delete) y métodos HTTP. Para ello, utilicé React y Hook Form para crear formularios de entrada de datos controlados y manejar la validación de los mismos. Además, implementé renderizado condicional para mostrar diferentes vistas según las acciones que el usuario quisiera realizar, lo que resultó en una interfaz amigable e intuitiva para el usuario.
+                Desarrollé una aplicación completa utilizando CRUD (Create, Read, Update, Delete) y métodos HTTP. Utilicé React y Hook Form para crear formularios de entrada de datos controlados y manejar la validación de los mismos. Además, implementé renderizado condicional para mostrar diferentes vistas según las acciones que el usuario quisiera realizar, lo que resultó en una interfaz amigable e intuitiva para el usuario.
                 </p>
               
-                <button className="portafolio-button-crud nav__button">
-                  Página
-                </button>
+                <a href="https://users-management-jach.netlify.app/" target="_blank" rel="noopener noreferrer">
+                  <button className="portafolio__button nav__button">
+                    Página
+                  </button>
+                </a>
               
               </div>
 
