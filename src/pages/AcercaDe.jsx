@@ -13,9 +13,9 @@ const AcercaDe = ({ handleCloseAcercaDe}) => {
         </div>
         <h1 className='acerca__title'>Acerca de mí</h1>
         <p className='acerca__content'> 
-          Hola soy Antonio un desarrollador full stack apasionado y altamente motivado, con una fuerte ética de trabajo y habilidades de liderazgo probadas. Mi experiencia me ha enseñado la importancia de la perseverancia y la dedicación para lograr resultados exitosos. Me siento cómodo trabajando tanto de manera independiente como en equipo, lo que me permite asumir responsabilidades y liderar proyectos con eficacia. Siempre estoy buscando nuevos desafíos y oportunidades para aprender y crecer. <br/>
+          Hola soy Antonio un desarrollador full stack motivado, con habilidades de liderazgo y una ética de trabajo fuerte. Disfruto trabajando tanto de manera independiente como en equipo y siempre estoy buscando nuevos desafíos para aprender y crecer.  <br/>
           <br/>
-          Soy un ingeniero egresado de UTEL, conocido por mi dedicación y perseverancia, lo que me permite enfrentar desafíos complejos y superarlos con éxito. Mi formación académica en ingeniería me ha brindado una sólida base en lógica y análisis, lo que me permite abordar los proyectos con una mentalidad estratégica y enfocada en los resultados. 
+          Soy ingeniero egresado de UTEL destacado por mi dedicación y perseverancia, lo que le permite enfrentar desafíos complejos y superarlos con éxito. Mi formación académica me brinda una sólida base en lógica y análisis, lo que me permite abordar los proyectos con una mentalidad estratégica enfocada en resultados.
         </p>
         <img className='acerca__logo logo_center' src={utel} alt="" />
       </div>
@@ -25,3 +25,7 @@ const AcercaDe = ({ handleCloseAcercaDe}) => {
 }
 
 export default AcercaDe
+
+
+
+
